@@ -4,7 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/react-provider-wrapper.svg)](https://www.npmjs.com/package/react-provider-wrapper)
 
 ## About  
----
+
 React Provider Wrapper wraps your application in all React context providers.
 This solves the issue of wrapper hell that can happen when working with multiple providers for an application or section of an application.
 
@@ -27,7 +27,7 @@ const App = () => (
 ```
 
 ## Installing
----
+
 ### npm
 ```sh
 $ npm install react-provider-wrapper
@@ -38,7 +38,6 @@ $ yarn add react-provider-wrapper
 ```
 
 ## Getting started
----
 
 Import WrapProviders and each provider into the component that you want to the parent component of the children that you want to consume the provider
 

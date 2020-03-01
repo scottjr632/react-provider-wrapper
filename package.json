@@ -1,6 +1,6 @@
 {
   "name": "react-provider-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrap React application with multiple wrappers. Avoiding wrapper hell created by multiple providers.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
