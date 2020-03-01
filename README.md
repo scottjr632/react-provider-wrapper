@@ -2,11 +2,12 @@
 
 [![NPM version](http://img.shields.io/npm/v/react-provider-wrapper.svg)](https://www.npmjs.com/package/react-provider-wrapper)
 [![NPM downloads](http://img.shields.io/npm/dm/react-provider-wrapper.svg)](https://www.npmjs.com/package/react-provider-wrapper)
+![npm-publish](https://github.com/scottjr632/react-provider-wrapper/workflows/npm-publish/badge.svg)
 
 ## About  
 
-React Provider Wrapper wraps your application in all React context providers.
-This solves the issue of wrapper hell that can happen when working with multiple providers for an application or section of an application.
+react-provider-wrapper wraps your application in all your React context providers.
+This solves the issue of wrapper hell that can happen when working with multiple providers for an application or section of an application that needs to become a consumer.
 
 __Example of wrapper hell__
 ```js
@@ -39,7 +40,7 @@ $ yarn add react-provider-wrapper
 
 ## Getting started
 
-Import WrapProviders and each provider into the component that you want to the parent component of the children that you want to consume the provider
+Import WrapProviders and each of the providers into the component that you want to be the parent component of the children that you want to consume from the provider.
 
 ```ts
 import WrapProviders from 'react-provider-wrapper'
@@ -71,7 +72,7 @@ const providers = [
     MockSecondContextProvider
 ]
 ```
-This can also be refactored out into a module that contains all providers and exports them in an index.{ts,js} file
+This can also be refactored out into a module that contains all providers and exports them in an index.{ts,js} file.
 
 __Wrap application or parent component with WrapProviders__
 ```js
