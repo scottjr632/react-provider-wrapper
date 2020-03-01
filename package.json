@@ -2,9 +2,18 @@
   "name": "react-provider-wrapper",
   "version": "1.0.0",
   "description": "Wrap React application with multiple wrappers. Avoiding wrapper hell created by multiple providers.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -17,10 +26,23 @@
     "Context",
     "Wrapper"
   ],
-  "author": "= <=>",
+  "author": "Scott Richardson <scott@scottrichardson.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scottjr632/react-provider-wrapper/issues"
   },
-  "homepage": "https://github.com/scottjr632/react-provider-wrapper#readme"
+  "homepage": "https://github.com/scottjr632/react-provider-wrapper#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "react": "^16.13.0"
+  }
 }
