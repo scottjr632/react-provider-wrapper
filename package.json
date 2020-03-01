@@ -5,12 +5,12 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
@@ -33,8 +33,13 @@
   },
   "homepage": "https://github.com/scottjr632/react-provider-wrapper#readme",
   "devDependencies": {
+    "@types/jest": "^25.1.3",
     "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "react-dom": "^16.13.0",
+    "ts-jest": "^25.2.1",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"

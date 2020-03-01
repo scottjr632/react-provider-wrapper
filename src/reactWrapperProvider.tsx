@@ -6,8 +6,7 @@ interface Props {
 
 const createProvidersTree = (providers: FC[], children: React.ReactNode): JSX.Element | React.ReactNode => {
   if (providers.length > 0) {
-    let NewProvider = providers.pop()
-    console.log(NewProvider)
+    const NewProvider = providers.pop()
     return (
       <NewProvider>
         {createProvidersTree(providers, children)}
