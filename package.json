@@ -1,0 +1,26 @@
+{
+  "name": "react-provider-wrapper",
+  "version": "1.0.0",
+  "description": "Wrap React application with multiple wrappers. Avoiding wrapper hell created by multiple providers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottjr632/react-provider-wrapper.git"
+  },
+  "keywords": [
+    "ReactJS",
+    "React",
+    "Providers",
+    "Context",
+    "Wrapper"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottjr632/react-provider-wrapper/issues"
+  },
+  "homepage": "https://github.com/scottjr632/react-provider-wrapper#readme"
+}
